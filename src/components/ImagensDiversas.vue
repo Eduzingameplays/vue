@@ -4,6 +4,7 @@ vue
     <div class="img-container">
       <img v-lazy="require('@/assets/cingchong.jpg')" alt="Imagem 2">
     </div>
+    <link rel="preload" href="path/to/cingchong.jpg" as="image">
   </template>
   
   <script>
