@@ -1,14 +1,24 @@
+vue
 <template>
-lista de imagens
-</template>
-
-<script>
-    export default {
-        name: 'ImagensDiversas',
-        props: {
-            msg: String
-        }
-    }
-</script>
-
-<style scoped></style>
+    lista de imagens
+    <div class="img-container">
+      <img v-lazy="require('@/assets/cingchong.jpg')" alt="Imagem 2">
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'ImagensDiversas',
+  };
+  </script>
+  
+  <style scoped>
+  .img-container {
+    display: flex;
+    gap: 10px; /* Espaço entre as imagens */
+  }
+  
+  .img-container img {
+    width: 30%; /* Define a largura das imagens */
+  }
+  </style>

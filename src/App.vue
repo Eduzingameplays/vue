@@ -1,15 +1,12 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/PaginaPrincipal.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
